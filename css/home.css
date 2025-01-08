@@ -1,0 +1,184 @@
+body{
+    background-color: #e6cca8;
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebush{
+    height: 100%; 
+    max-height: 100vh; 
+    width: auto; 
+    display: block;
+}
+
+#game{
+    background-image: url("../images/river.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 800px;
+    height: 100vh; 
+    position: relative;
+    overflow: hidden;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    font-size: 80px;
+    font-weight:bolder;
+    color: #331F1B;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-bottom: 80px;
+    background: none;
+    border: none;
+}
+
+#controlleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    padding-right: 10px;
+}
+
+#controlright{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.start{
+    width: 110px;
+    height: auto;
+    font-size: 30px;
+    font-weight:bolder;
+    background-color: #1a660d;
+    color: rgb(246, 255, 246);
+    cursor: pointer;
+    border-radius: 10mm;
+    font-family:"Hammersmith One", serif;
+    font-weight: 100;
+    letter-spacing: 0.3mm;
+    margin-top: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.start:active {
+    transform: scale(1.1); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
+html{
+    font-family:"Hammersmith One", serif;
+}
+.back{
+    width: 50px;
+    margin-top: 20px;
+}
+
+#playerBoat {
+    position: absolute;
+    top: 300px;  
+    left: 100px; 
+    z-index:10;
+}
+
+.newboat{
+    width: auto;
+    height: 200px;
+    margin-left: 0;
+
+}
+
+.hurdle {
+    width: 150px; 
+    height: 100px; 
+    background-size: cover;
+    position: absolute;
+    z-index: 5;
+    visibility: visible; 
+}
+
+
+#gameOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Translucent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#gamePopup {
+    background: linear-gradient(145deg, #3f2e0a, #362503); 
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+    width: 300px;
+    box-shadow: 
+        8px 8px 15px rgba(0, 0, 0, 0.4), 
+        -4px -4px 8px rgba(255, 255, 255, 0.2); 
+}
+
+#gamePopup:hover {
+    box-shadow: 
+        5px 5px 10px rgba(0, 0, 0, 0.3), 
+        -2px -2px 5px rgba(255, 255, 255, 0.3); 
+}
+
+#gamePopup h2 {
+    margin-top: 0;
+}
+
+#gameover{
+    color: rgb(124, 235, 255);
+    font-size: 50px;
+}
+
+#restartButton {
+    padding: 10px 20px;
+    width: 150px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10mm;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 200;
+    font-family: "Hammersmith One", serif;
+}
+
+#score{
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+}
+
+#restartButton:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+
+
+
